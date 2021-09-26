@@ -28,18 +28,17 @@ for (let i = 0; i < iTag.length; i++) {
   
     ul.onclick = e => {
 
-        if (e.target.className === "far fa-trash-alt"){
-        let x = e.target.parentNode;
-        x.style.display = "none";}
-    }
-};
+// removing element  from to do list
 
+        if (e.target.tagName === "I"){
+        let x = e.target.parentNode;
+        x.remove();
+
+        
+    }
 
 // task done
 
-for (let i = 0; i < li.length; i++) {
-
-    li[i].onclick = e => {
         if (e.target.tagName === "LI") {
             if (e.target.style.textDecoration === "line-through") {
                 e.target.style.textDecoration = "none";
@@ -48,8 +47,7 @@ for (let i = 0; i < li.length; i++) {
                 e.target.style.textDecoration = "line-through";
                 e.target.style.backgroundColor = "grey"
             }
-
-            
         }
     }
-}
+};
+
