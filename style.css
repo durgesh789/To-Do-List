@@ -12,6 +12,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
 h3{
     margin: 50px 50px 0px 50px;
     padding: 30px 0;
@@ -23,6 +24,9 @@ h3{
     color: #5B37AB;
 }
 
+@media screen (width:480px){
+    width:100%;
+}
 ul{
     background-color: #ADD2C2;
     width: 50%;
